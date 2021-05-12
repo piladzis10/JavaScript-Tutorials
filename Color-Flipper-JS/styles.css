@@ -1,0 +1,71 @@
+body{
+    margin:0;
+    background-color:red;
+    position:relative;
+}
+
+.navbar{
+    background-color:gray;
+    display:flex;
+    padding:7px;
+    position:relative;
+}
+#logo{
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   -webkit-background-clip: text;
+    color: transparent;
+    font-size:30px;
+    margin:0;
+}
+
+.navbar li{
+    display: inline;
+    
+}
+
+.navbar li a{
+    color:#FF6600;
+    font-size: 30px;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.navbar li a:hover{
+    color:white;
+    transition: 1.5s;
+}
+
+nav{
+    position:absolute;
+    right:0;
+    top:50%;
+    transform:translate(0,-50%) 
+}
+
+.container{
+    background-color: black;
+    position:absolute;
+    top: 30vh;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+    color:white;
+    padding: 10px;
+    border: 2px dashed white;
+    font-size: 30px;
+    text-align: center;
+}
+
+#changeColor{
+    font-size: 24px;
+    font-weight: bold;
+    position:absolute;
+    top:45vh;
+    left: 50vw;
+    transform:translate(-50%,-50%);
+    background-color:transparent;
+    border: 2px solid black;
+    border-radius: 10px;
+
+}
+
+
+

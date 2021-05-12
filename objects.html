@@ -1,0 +1,66 @@
+<html>
+    <head>Objects</head>
+    <body>
+        <p id="objects"></p>
+        <p id="car"></p>
+    </body>
+    <script>
+        var student = {
+            name: "Chris",
+            age: 21,
+            studies: "computer science"
+        };
+        document.getElementById("objects").innerHTML = student.name + " of the age " + student.age + " studies " + student.studies;
+
+
+    </script>
+    <button id="btn">Click me</button>
+    <script>
+        var student = new Object();
+        student.name = "Chris"
+        student.age = 22
+        student.studies = "Math"
+        student.age=24
+        document.getElementById("objects").innerHTML = student.name + " of the age " + student.age + " studies " + student.studies;
+    </script>
+    <script>
+        var student = {
+            name: "Chris",
+            age: 21,
+        };
+        function sayHi(){
+            alert("Hello!");
+        }
+        student.message = sayHi;
+        console.log(student.message);
+        document.getElementById("objects").innerHTML = "Hi" + student.name;
+        document.getElementById("btn").onclick = student.message;
+
+    </script>
+    <script>
+        var car = {
+            model: "Rover",
+            age: 21,
+            gas: "diesel",
+            get fuel(){
+                return this.gas
+            }
+        };
+        document.getElementById("car").innerHTML = car.fuel;
+        
+
+    </script>
+
+    <script>
+        var car = {
+            model: "Audi",
+            color: "Green",
+            set col(c){
+               this.color = c;
+            }
+        }
+        car.col = "Blue"
+        document.getElementById("car").innerHTML = car.color;
+    </script>
+    
+</html>

@@ -1,0 +1,58 @@
+<html>
+    <head>
+        Javascript tutorial
+    </head>
+
+    <body>
+        <p id="demo"></p>
+    </body>
+    <script>
+        let cars = ["bmw", "volvo", "honda"];
+        document.getElementById("demo").innerHTML = cars; 
+
+        let bmw = cars[0];
+        document.getElementById("demo").innerHTML = bmw;  
+
+        let len = cars.length;
+        document.getElementById("demo").innerHTML = len; 
+
+        let last = cars[cars.length - 1];
+        document.getElementById("demo").innerHTML = last;
+
+        cars.forEach((item, index) => {console.log(item, index)});
+
+        document.getElementById("demo").innerHTML = cars.toString();
+
+        cars.push("Audi")
+
+        cars.shift();
+        document.getElementById("demo").innerHTML = cars.toString();
+
+        cars.unshift("Kia");
+        document.getElementById("demo").innerHTML = cars.toString();
+
+        let bikes = ["yamaha", "suzuki", "honda", "enfield"];
+        let vehicles = cars.concat(bikes);
+
+        document.getElementById("demo").innerHTML = vehicles;
+
+        vehicles.sort(); // reverse
+        document.getElementById("demo").innerHTML = vehicles; 
+
+        let num1 = [2,3,4,5,6,7];
+        let num2 = num1.map(value => value *3);
+
+        document.getElementById("demo").innerHTML = num2; 
+
+
+        let num3 = num1.filter(value => value>4);
+        document.getElementById("demo").innerHTML = num3; 
+
+        let num4 = num1.reduce(sum)
+        function sum(total, value){
+            return total+value
+        }
+        document.getElementById("demo").innerHTML = num4; 
+
+     </script>
+</html>

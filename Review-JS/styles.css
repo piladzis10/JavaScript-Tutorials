@@ -1,0 +1,53 @@
+body {
+    background-color:azure;
+    position:relative;
+}
+
+.container{
+    position:absolute;
+    top:30vh;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+    margin:0;
+}
+
+.underline{
+    background-color:blueviolet;
+    height:0.25rem;
+    width:5rem;
+    margin-left:auto;
+    margin-right: auto;
+    
+}
+
+.review{
+    position:absolute;
+    background-color:white;
+    top:55vh;
+    left:50vw;
+    transform: translate(-50%,-50%);
+    height:15rem;
+    width:15rem;
+}
+
+#author{
+    position:absolute;
+    left:50%;
+    bottom:7%;
+    transform:translate(-50%,0);
+    font-size:30px;
+
+}
+
+#persone-img{
+    border-radius: 50%;
+    position:absolute;
+    object-fit:cover;
+    left:50%;
+    top:7%;
+    transform:translate(-50%,0);
+    height:50%;
+    width:50%;
+    
+}
+
